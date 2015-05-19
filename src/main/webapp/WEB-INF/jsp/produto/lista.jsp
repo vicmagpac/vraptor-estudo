@@ -9,7 +9,7 @@
 </head>
 <body>
 	<div  class="container">
-	<h1>Listagem de Produtos</h1>
+	<h1>Listagem de Produtos do ${usuarioLogado.usuario.nome}</h1>
 		<a href="<c:url value='/produto/formulario' />">Adicionar mais produtos</a> | 
 		<a target="_blank" href="<c:url value='/produto/listaXML' />">Lista em XML</a> | 
 		<a target="_blank" href="<c:url value='/produto/listaJSON' />">Lista em JSON</a> | 

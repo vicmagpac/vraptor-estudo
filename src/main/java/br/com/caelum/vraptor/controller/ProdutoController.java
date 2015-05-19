@@ -7,6 +7,7 @@ import br.com.caelum.vraptor.Controller;
 import br.com.caelum.vraptor.Get;
 import br.com.caelum.vraptor.Post;
 import br.com.caelum.vraptor.Result;
+import br.com.caelum.vraptor.annotation.Log;
 import br.com.caelum.vraptor.dao.ProdutoDao;
 import br.com.caelum.vraptor.model.Produto;
 import br.com.caelum.vraptor.validator.Validator;
@@ -41,6 +42,7 @@ public class ProdutoController {
 	}
 	
 	@Get
+	@Log
 	public void lista() {
 		this.result.include("produtoList", this.dao.lista());
 	}
@@ -56,6 +58,7 @@ public class ProdutoController {
 	}
 	
 	@Get
+	@Log
 	public void formulario() {
 		
 	}

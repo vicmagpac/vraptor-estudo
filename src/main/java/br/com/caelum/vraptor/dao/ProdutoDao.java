@@ -23,15 +23,11 @@ public class ProdutoDao {
 	}
 	
 	public void adiciona(Produto produto) {
-		this.em.getTransaction().begin();
 		this.em.persist(produto);
-		this.em.getTransaction().commit();
 	}
 
 	public void remove(Produto produto) {
-		this.em.getTransaction().begin();
 		this.em.remove(busca(produto));
-		this.em.getTransaction().commit();
 	}
 
 	public Produto busca(Produto produto) {
